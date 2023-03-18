@@ -1,0 +1,12 @@
+---
+- name: Ansible playbook to copy files
+  hosts: worker1
+  become: yes
+  tasks: 
+    - name: Copy file with owner and permissions
+      copy:
+        src: /home/madan/ansible/file/acl-playbook.yaml
+        dest: /tmp/vipul/
+        owner: joe
+        group: joe
+        mode: '0666'
