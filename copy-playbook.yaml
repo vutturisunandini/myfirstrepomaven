@@ -5,8 +5,8 @@
   tasks: 
     - name: Copy file with owner and permissions
       copy:
-        src: /home/madan/ansible/file/acl-playbook.yaml
-        dest: /tmp/vipul/
+        src: /tmp/sample.txt
+        dest: /tmp
         owner: joe
         group: joe
         mode: '0666'
