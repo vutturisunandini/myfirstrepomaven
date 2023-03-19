@@ -6,7 +6,7 @@
     - name: Copy file with owner and permissions
       copy:
         src: /tmp/sample.txt
-        dest: /tmp/demo
+        dest: /tmp/demo/
         owner: joe
         group: joe
         mode: '0666'
