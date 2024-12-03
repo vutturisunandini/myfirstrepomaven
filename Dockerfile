@@ -7,7 +7,7 @@ COPY target/my-app-1.0-SNAPSHOT.jar /usr/local/my-app.jar
 WORKDIR /usr/local
 
 # Expose the port the application listens on
-EXPOSE 8082
+EXPOSE 8080
 
 # Command to run the JAR
 CMD ["java", "-jar", "my-app.jar"]
